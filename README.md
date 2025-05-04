@@ -1,2 +1,2 @@
-# TimothyQuill.github.io
+# gemmas-website
 Gemma's website
