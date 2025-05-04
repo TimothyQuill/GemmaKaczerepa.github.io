@@ -1,2 +1,2 @@
-# GemmaKaczerepa.github.io
+# TimothyQuill.github.io
 Gemma's website
