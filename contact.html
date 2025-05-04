@@ -30,7 +30,6 @@
         <div class="contact-info">
           <p>Email: gemma.kaczerepa@gmail.com</p>
           <p>Phone: +61 434 011 711</p>
-          <!-- LinkedIn Icon -->
           <a
             href="https://www.linkedin.com/in/gemma-kaczerepa-b67a0948/"
             target="_blank"
@@ -46,8 +45,12 @@
         </div>
         <!-- /.contact-info -->
 
-        <!-- contact-form -->
-        <form class="contact-form" action="#" method="POST">
+        <!-- contact-form using Formsubmit -->
+        <form class="contact-form" action="https://formsubmit.co/timothyquill@icloud.com" method="POST">
+          <!-- Optional spam protection and redirect -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
 

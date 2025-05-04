@@ -20,6 +20,18 @@ body {
   color: #333;
 }
 
+.chunk {
+  flex: 1;
+  max-width: 600px;
+  padding-top: 3em;
+}
+
+.section-heading {
+  font-size: 2rem;
+  text-align: left; /* ✅ force left alignment */
+  margin: 0;
+}
+
 /* HEADER & NAV */
 .header-content {
   display: flex;
@@ -52,7 +64,7 @@ main {
 section {
   margin-top: 4em;
 }
-.chunk { margin-top: 3em; padding-top: 4em; }
+.chunk { margin-top: 1em; padding-top: 4em; }
 .chunk2 { margin-top: 3em; }
 .chunk3 { margin-bottom: 6em; }
 
@@ -216,4 +228,68 @@ h3 {
 
 .chunk2 {
   padding-bottom: 3rem;
+}
+
+/* === DESKTOP === */
+.intro {
+  display: flex;
+  flex-direction: row-reverse; /* ✅ image on the right */
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    background-color: #f9f8f6;
+    padding: 0rem 1rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .chunk {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    margin-top: 1rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 1rem;
+  }
+
+  /* 🔁 NEW: make .intro stack vertically and reverse order */
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .profile-img {
+    content: url("images/profile2.jpg"); /* Mobile image */
+    float: none;
+    max-width: 100%;
+    margin: 2rem auto 0;
+  }
+
+  .section-heading {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  #contact .contact-container {
+    flex-direction: column;
+  }
 }
